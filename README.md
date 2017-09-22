@@ -47,7 +47,7 @@
 
 第一种写法:
 
-``` markdown
+```markdown
 这是一个一级标题
 ============================
 这是一个二级标题
@@ -59,11 +59,11 @@
 > 这是一个二级标题
 > --------------------------------------------------
 
-* * *
+---
 
 第二种写法:
 
-``` markdown
+```markdown
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -78,3 +78,68 @@
 > #### 四级标题
 > ##### 五级标题
 > ###### 六级标题
+
+## 分隔线
+
+你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线:
+
+``` markdown
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+```
+
+> * * *
+> - - -
+
+## 超链接
+
+Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。
+
+### 行内式
+
+> []里写链接文字，()里写链接地址, ()中的 "" 中可以为链接指定title属性, title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。`[链接文字](链接地址 "链接标题")`这样的形式。链接地址与链接标题前有一个空格。
+
+```markdown
+[Markdown Syntax](https://github.com/cdoco/markdown-syntax)
+[Markdown Syntax](https://github.com/cdoco/markdown-syntax "Markdown Syntax")
+```
+
+> [Markdown Syntax](https://github.com/cdoco/markdown-syntax)
+
+> [Markdown Syntax](https://github.com/cdoco/markdown-syntax "Markdown Syntax")
+
+### 参考式
+
+参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。
+
+> 参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址 "链接标题"，链接地址与链接标题前有一个空格。
+
+```markdown
+全球最大的搜索引擎网站是[Google][1]。
+
+[1]:http://www.google.com "Google"
+```
+
+> 全球最大的搜索引擎网站是[Google][1]。
+
+> [1]:http://www.google.com "Google"
+
+### 自动链接
+
+> Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用<>包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如
+
+```markdown
+<https://google.com/>
+<ocdoco@gmail.com>
+```
+
+> <https://google.com/>
+
+> <ocdoco@gmail.com>
