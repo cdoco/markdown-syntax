@@ -127,7 +127,7 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 [1]:http://www.google.com "Google"
 ```
 
-> 全球最大的搜索引擎网站是[Google][1]。
+> 全球最大的搜索引擎网站是 [Google][1]。
 
 > [1]:http://www.google.com "Google"
 
@@ -137,6 +137,7 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 
 ```markdown
 <https://google.com/>
+
 <ocdoco@gmail.com>
 ```
 
