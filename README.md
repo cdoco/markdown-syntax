@@ -113,7 +113,8 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 ```
 
 > [Markdown Syntax](https://github.com/cdoco/markdown-syntax)
-
+> <br />
+> 
 > [Markdown Syntax](https://github.com/cdoco/markdown-syntax "Markdown Syntax")
 
 ### 参考式
@@ -129,7 +130,8 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 ```
 
 > 全球最大的搜索引擎网站是 [Google][1]。
-
+> <br />
+>
 > [1]:http://www.google.com "Google"
 
 ### 自动链接
@@ -143,5 +145,6 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 ```
 
 > <https://google.com/>
-
+> <br />
+>
 > <ocdoco@gmail.com>
