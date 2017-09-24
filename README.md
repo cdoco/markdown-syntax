@@ -351,45 +351,45 @@ Markdown 使用星号`*`和底线`_`作为标记强调字词的符号。
 简单方式:
 
 ```markdown
-title|title|title
+诗名|作者|朝代
 -|-|-
-text|text|text
-text|text|text
-text|text|text
+白头吟|卓文君|两汉
+锦瑟|李商隐|唐代
+登科后|孟郊|唐代
 ```
 
-title|title|title
+诗名|作者|朝代
 -|-|-
-text|text|text
-text|text|text
-text|text|text
+白头吟|卓文君|两汉
+锦瑟|李商隐|唐代
+登科后|孟郊|唐代
 
 原生方式:
 
 ```markdown
-|title|title|title|
+|诗名|作者|朝代|
 |-|-|-|
-|text|text|text|
-|text|text|text|
-|text|text|text|
+|白头吟|卓文君|两汉|
+|锦瑟|李商隐|唐代|
+|登科后|孟郊|唐代|
 ```
 
-|title|title|title|
+|诗名|作者|朝代|
 |-|-|-|
-|text|text|text|
-|text|text|text|
-|text|text|text|
+|白头吟|卓文君|两汉|
+|锦瑟|李商隐|唐代|
+|登科后|孟郊|唐代|
 
 为表格第二列指定方向:
 
 ```markdown
-title|title
+诗名|名句
 -|-:
-text|text
-text|shadowsocket
+梦微之|君埋泉下泥销骨。
+上邪|上邪，我欲与君相知，长命无绝衰。
 ```
 
-title|title
+诗名|名句
 -|-:
-text|text
-text|shadowsocket
+梦微之|君埋泉下泥销骨。
+上邪|上邪，我欲与君相知，长命无绝衰。
