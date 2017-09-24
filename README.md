@@ -478,3 +478,71 @@ $closure = function () use($name) {
 ### 内容目录
 
 在段落中填写 `[TOC]` 以显示全文内容的目录结构。
+
+## LaTeX 公式
+
+### $ 表示行内公式
+
+```markdown
+质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+```
+
+质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+
+### $$ 表示整行公式
+
+```markdown
+$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+```
+
+$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+
+## 流程图
+
+```markdown
+flow
+st=>start: Start:>https://www.markdown-syntax.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>end
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
+```
+
+flow
+st=>start: Start:>https://www.markdown-syntax.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>end
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
+
+## 时序图
+
+```sequence
+Alice->Bob: Hello Bob, how are you ?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+## 待办事宜列表
+
+使用带有 `[ ]` 或 `[x]` (未完成或已完成)项的列表语法撰写一个待办事宜列表, 例如:
+
+```markdown
+- []早起跑步
+- [x]看书
+```
+
+- []早起跑步
+- [x]看书
