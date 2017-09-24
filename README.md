@@ -1,5 +1,7 @@
 # Markdown Syntax
 
+![](https://cdoco.com/images/markdown-syntax.png)
+
 ## 目录
 
 - [分级标题](#分级标题)
