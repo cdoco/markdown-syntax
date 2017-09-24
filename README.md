@@ -227,10 +227,10 @@ Markdown 也允许你偷懒只在整个段落的第一行最前面加上 `>` :
 网页中, 锚点其实就是页内超链接, 也就是链接本文档内部的某些元素, 实现当前页面中的跳转。比如我这里写下一个锚点, 点击回到目录, 就能跳转到目录。 在目录中点击这一节, 就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。
 
 ```markdown
-**[⬆ top](#什么是-Markdown-)**
+**[⬆ top](#什么是-markdown-)**
 ```
 
-**[⬆ top](#什么是-Markdown-)**
+**[⬆ top](#什么是-markdown-)**
 
 ## 强调
 
@@ -299,12 +299,14 @@ Markdown 使用星号`*`和底线`_`作为标记强调字词的符号。
 如果要在列表项目内放进引用，那 `>` 就需要缩进:
 
 ```markdown
-* 菩提偈
+* 菩提偈:
+
   > 菩提本无树，明镜亦非台。
   > 本来无一物，何处惹尘埃！
 ```
 
-* 菩提偈
+* 菩提偈:
+
   > 菩提本无树，明镜亦非台。
   > 本来无一物，何处惹尘埃！
 
@@ -349,45 +351,45 @@ Markdown 使用星号`*`和底线`_`作为标记强调字词的符号。
 简单方式:
 
 ```markdown
-学号|姓名|分数
+title|title|title
 -|-|-
-小明|男|75
-小红|女|79
-小陆|男|92
+text|text|text
+text|text|text
+text|text|text
 ```
 
-学号|姓名|分数
+title|title|title
 -|-|-
-小明|男|75
-小红|女|79
-小陆|男|92
+text|text|text
+text|text|text
+text|text|text
 
 原生方式:
 
 ```markdown
-|学号|姓名|分数|
+|title|title|title|
 |-|-|-|
-|小明|男|75|
-|小红|女|79|
-|小陆|男|92|
+|text|text|text|
+|text|text|text|
+|text|text|text|
 ```
 
-|学号|姓名|分数|
+|title|title|title|
 |-|-|-|
-|小明|男|75|
-|小红|女|79|
-|小陆|男|92|
+|text|text|text|
+|text|text|text|
+|text|text|text|
 
 为表格第二列指定方向:
 
 ```markdown
-产品|价格
+title|title
 -|-:
-Leanote 高级账号|60元/年
-Leanote 超级账号|120元/年
+text|text
+text|shadowsocket
 ```
 
-产品|价格
+title|title
 -|-:
-Leanote 高级账号|60元/年
-Leanote 超级账号|120元/年
+text|text
+text|shadowsocket
