@@ -506,24 +506,27 @@ $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
 ## 流程图
 
 ```flow
-st=>start: Start
-i=>inputoutput: 输入年份n
-cond1=>condition: n能否被4整除？
-cond2=>condition: n能否被100整除？
-cond3=>condition: n能否被400整除？
-o1=>inputoutput: 输出非闰年
-o2=>inputoutput: 输出非闰年
-o3=>inputoutput: 输出闰年
-o4=>inputoutput: 输出闰年
+st=>start: Start:>https://www.markdown-syntax.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
 e=>end
-st->i->cond1
-cond1(no)->o1->e
-cond1(yes)->cond2
-cond2(no)->o3->e
-cond2(yes)->cond3
-cond3(yes)->o2->e
-cond3(no)->o4->e
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
 ```
+
+flow
+st=>start: Start:>https://www.markdown-syntax.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>end
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
 
 ## 时序图
 
