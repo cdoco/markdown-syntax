@@ -443,7 +443,7 @@ $closure = function () use($name) {
 
 ### HTML 原始码
 
-在代码区块里面, `&` 、 `<` 和 `>` 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，剩下的 Markdown 都会帮你处理，例如:
+在代码区块里面, `&` 、 `<` 和 `>` 会自动转成 HTML 实体, 这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码, 只需要复制贴上, 剩下的 Markdown 都会帮你处理，例如:
 
 ```html
 <table>
@@ -474,6 +474,7 @@ $closure = function () use($name) {
         <td>王平</td>
     </tr>
 </table>
+```
 
 ### 内容目录
 
