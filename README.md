@@ -155,28 +155,22 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 
 ```markdown
 > 这是一个区块引用实例,
-> Markdown-1.
-> Markdown-2.
-> 
-> Markdown-3.
-> Markdown-4.
+
+> Markdown.
 ```
 
 > 这是一个区块引用实例,
-> Markdown-1,
-> Markdown-2.
-> 
-> Markdown-3,
-> Markdown-4.
+
+> Markdown.
 
 Markdown 也允许你偷懒只在整个段落的第一行最前面加上 `>` :
 
 ```markdown
 > 这是一个区块引用实例,
-Markdown-1.
+Markdown-1,
 Markdown-2.
 
-> Markdown-3.
+> Markdown-3,
 Markdown-4.
 ```
 
@@ -193,12 +187,16 @@ Markdown-4.
 
 ```markdown
 >>> 请问 Markdwon 怎么用？ - 小白
+
 >> 自己看教程！ - 愤青
+
 > 教程在哪？ - 小白
 ```
 
 >>> 请问 Markdwon 怎么用？ - 小白
+
 >> 自己看教程！ - 愤青
+
 > 教程在哪？ - 小白
 
 ### 引用其它要素
@@ -210,6 +208,16 @@ Markdown-4.
 > 2.这是第二行列表项。
 > 
 > 给出一些例子代码:
-> 
->     return shell_exec("echo $input | $markdown_script");
+> ```markdown
+> return shell_exec("echo $input | $markdown_script");
+> ```
 ```
+
+> - 这是第一行列表项。
+>
+> - 这是第二行列表项。
+>
+> - 给出一些例子代码:
+> ```markdown
+>   return shell_exec("echo $input | $markdown_script");
+> ```
