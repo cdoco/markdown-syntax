@@ -479,6 +479,20 @@ $closure = function () use($name) {
 
 在段落中填写 `[TOC]` 以显示全文内容的目录结构。
 
+## 注脚
+
+在需要添加注脚的文字后加上脚注名字`[^注脚名字]`, 称为加注。 然后在文本的任意位置(一般在最后)添加脚注, 脚注前必须有对应的脚注名字。
+
+```markdown
+使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2]。
+
+[^1]: Markdown 是一种纯文本标记语言
+
+[^2]: HyperText Markup Language 超文本标记语言
+```
+
+PS: github 不支持注脚
+
 ## LaTeX 公式
 
 ### $ 表示行内公式
@@ -497,11 +511,7 @@ $$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
 $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
 ```
 
-![](https://latex.codecogs.com/gif.latex?\sum_{i=1}\^n\ a_i=0)
-
-![](https://latex.codecogs.com/gif.latex?f(x_1,x_x,\ldots,x_n)\ =\ x_1^2\ +\ x_2^2\ +\ \cdots\ +\ x_n^2)
-
-![](https://latex.codecogs.com/gif.latex?\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj}\ z_k})
+PS: github 不支持 LaTeX 公式
 
 ## 流程图
 
@@ -517,6 +527,8 @@ cond(yes)->e
 cond(no)->sub->io
 ```
 
+PS: github 不支持流程图
+
 ## 时序图
 
 ```sequence
@@ -524,6 +536,8 @@ Alice->Bob: Hello Bob, how are you ?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
+
+PS: github 不支持时序图
 
 ## 待办事宜列表
 
@@ -533,6 +547,3 @@ Bob-->Alice: I am good thanks!
 - [ ]早起跑步
 - [x]看书
 ```
-
-- [ ]早起跑步
-- [x]看书
