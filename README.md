@@ -474,7 +474,6 @@ $closure = function () use($name) {
         <td>王平</td>
     </tr>
 </table>
-```
 
 ### 内容目录
 
