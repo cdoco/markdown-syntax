@@ -35,9 +35,9 @@
   - [HTML 原始码](#html-原始码)
 - [内容目录](#内容目录)
 - [注脚](#注脚)
-- [LaTeX 公式](#LaTeX公式)
-  - [$ 表示行内公式](#$表示行内公式)
-  - [$$ 表示整行公式](#$$表示整行公式)
+- [LaTeX 公式](#latex-公式)
+  - [$ 表示行内公式](#-表示行内公式)
+  - [$$ 表示整行公式](#-表示整行公式)
 - [流程图](#流程图)
 - [时序图](#时序图)
 - [待办事宜列表](#待办事宜列表)
@@ -487,7 +487,7 @@ $closure = function () use($name) {
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
 ```
 
-质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+质能守恒方程可以用一个很简洁的方程式, ![](https://latex.codecogs.com/gif.latex?E=mc^2) 来表达。
 
 ### $$ 表示整行公式
 
@@ -497,35 +497,33 @@ $$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
 $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
 ```
 
-$$\sum_{i=1}^n a_i=0$$
-$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
-$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+![](https://latex.codecogs.com/gif.latex?\sum_{i=1}\^n\ a_i=0)
+
+![](https://latex.codecogs.com/gif.latex?f(x_1,x_x,\ldots,x_n)\ =\ x_1^2\ +\ x_2^2\ +\ \cdots\ +\ x_n^2)
+
+![](https://latex.codecogs.com/gif.latex?\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj}\ z_k})
 
 ## 流程图
 
-```markdown
-flow
-st=>start: Start:>https://www.markdown-syntax.com
-io=>inputoutput: verification
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-sub=>subroutine: Your Subroutine
+```flow
+st=>start: Start
+i=>inputoutput: 输入年份n
+cond1=>condition: n能否被4整除？
+cond2=>condition: n能否被100整除？
+cond3=>condition: n能否被400整除？
+o1=>inputoutput: 输出非闰年
+o2=>inputoutput: 输出非闰年
+o3=>inputoutput: 输出闰年
+o4=>inputoutput: 输出闰年
 e=>end
-st->io->op->cond
-cond(yes)->e
-cond(no)->sub->io
+st->i->cond1
+cond1(no)->o1->e
+cond1(yes)->cond2
+cond2(no)->o3->e
+cond2(yes)->cond3
+cond3(yes)->o2->e
+cond3(no)->o4->e
 ```
-
-flow
-st=>start: Start:>https://www.markdown-syntax.com
-io=>inputoutput: verification
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-sub=>subroutine: Your Subroutine
-e=>end
-st->io->op->cond
-cond(yes)->e
-cond(no)->sub->io
 
 ## 时序图
 
@@ -540,9 +538,9 @@ Bob-->Alice: I am good thanks!
 使用带有 `[ ]` 或 `[x]` (未完成或已完成)项的列表语法撰写一个待办事宜列表, 例如:
 
 ```markdown
-- []早起跑步
+- [ ]早起跑步
 - [x]看书
 ```
 
-- []早起跑步
+- [ ]早起跑步
 - [x]看书
