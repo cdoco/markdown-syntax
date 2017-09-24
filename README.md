@@ -501,7 +501,7 @@ PS: github 不支持注脚
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
 ```
 
-质能守恒方程可以用一个很简洁的方程式, ![](https://latex.codecogs.com/gif.latex?E=mc^2) 来表达。
+质能守恒方程可以用一个很简洁的方程式 ![](https://latex.codecogs.com/gif.latex?E=mc^2) 来表达。
 
 ### $$ 表示整行公式
 
