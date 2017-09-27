@@ -520,7 +520,7 @@ PS: github 不支持 LaTeX 公式, 但是有个折中的解决方案, 使用 cod
 
 ![](https://latex.codecogs.com/gif.latex?sum_{i=1}^n%20a_i=0)
 
-![](https://latex.codecogs.com/gif.latex?f(x_1,x_x,\ldots,x_n\)%20=%20x_1^2%20+%20x_2^2%20+%20\cdots%20+%20x_n^2%20)
+![](https://latex.codecogs.com/gif.latex?f\(x_1,x_x,\ldots,x_n\)%20=%20x_1^2%20+%20x_2^2%20+%20\cdots%20+%20x_n^2%20)
 
 ## 流程图
 
