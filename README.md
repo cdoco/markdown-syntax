@@ -491,7 +491,7 @@ $closure = function () use($name) {
 [^2]: HyperText Markup Language 超文本标记语言
 ```
 
-PS: github 不支持注脚
+PS: github 不支持注脚 :joy:
 
 ## LaTeX 公式
 
@@ -515,7 +515,7 @@ PS: github 不支持 LaTeX 公式, 但是有个折中的解决方案, 使用 cod
 
 ```markdown
 ![](https://latex.codecogs.com/gif.latex?sum_{i=1}^n%20a_i=0)
-![](https://latex.codecogs.com/gif.latex?f(x_1,x_x,\ldots,x_n\)%20=%20x_1^2%20+%20x_2^2%20+%20\cdots%20+%20x_n^2%20)
+![](https://latex.codecogs.com/gif.latex?f\(x_1,x_x,\ldots,x_n\)%20=%20x_1^2%20+%20x_2^2%20+%20\cdots%20+%20x_n^2%20)
 ```
 
 ![](https://latex.codecogs.com/gif.latex?sum_{i=1}^n%20a_i=0)
@@ -524,6 +524,32 @@ PS: github 不支持 LaTeX 公式, 但是有个折中的解决方案, 使用 cod
 
 ## 流程图
 
+流程图大致分为两段, 第一段是定义元素, 第二段是定义元素之间的走向。
+
+定义元素的语法 `tag=>type: content:>url`。
+
+- tag就是元素名字。
+- type是这个元素的类型, 有6中类型,分别为:
+
+type|含义
+-|-
+start|开始
+end|结束
+operation|操作
+subroutine|子程序
+condition|条件
+inputoutput|输入或产出
+
+content 就是在框框中要写的内容, 注意type后的冒号与文本之间一定要有个空格。
+
+用`->`来连接两个元素, 需要注意的是condition类型, 因为他有yes和no两个分支, 所以要写成:
+
+```markdown
+c2(yes)->io->e
+c2(no)->op2->e
+```
+
+```markdown
 ```flow
 st=>start: Start:>https://www.markdown-syntax.com
 io=>inputoutput: verification
@@ -534,19 +560,26 @@ e=>end
 st->io->op->cond
 cond(yes)->e
 cond(no)->sub->io
+` ``
 ```
 
-PS: github 不支持流程图
+![](https://cdoco.com/images/flow.png)
+
+PS: github 不支持流程图 :joy:
 
 ## 时序图
 
+```markdown
 ```sequence
 Alice->Bob: Hello Bob, how are you ?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
+` ``
 ```
 
-PS: github 不支持时序图
+![](https://cdoco.com/images/sequence.png)
+
+PS: github 不支持时序图 :joy:
 
 ## 待办事宜列表
 
